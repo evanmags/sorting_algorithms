@@ -2,5 +2,5 @@
 
 - Bubble Sort
 - Insertion Sort
-- (https://github.com/evanmags/merge_sort.py)[Merge Sort]
+- [Merge Sort](https://github.com/evanmags/merge_sort.py)
 - Selection Sort
