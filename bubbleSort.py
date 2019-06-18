@@ -23,8 +23,3 @@ def bubbleSort(l):
     # increment
     count += 1
   return l
-  
-print(bubbleSort([7, 1, 2, 3, 4, 5, 6]))
-
-
-

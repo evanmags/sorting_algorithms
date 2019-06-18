@@ -1,4 +1,9 @@
-def selectionSort(l):
+def selectionSort(l: list) -> list:
+  """
+  consumes a list and sorts using the selection sort algorithm
+  returns the sorted list
+  >>> selectionSort([7, 1, 3, 5, 4, 6, 2]) -> [1, 2, 3, 4, 5, 6, 7]
+  """
   newL = []
 
   while len(l) > 0:
@@ -10,6 +15,7 @@ def selectionSort(l):
     l.remove(smallest)
     newL.append(smallest)
   
-  return newL
+  l = newL
 
-print(selectionSort([7, 1, 2, 3, 4, 5, 6]))
+  return l
+

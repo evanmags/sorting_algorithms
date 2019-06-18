@@ -12,6 +12,3 @@ def insertionSort(l):
     index += 1
 
   return l
-
-print(insertionSort([7, 6, 5, 4, 3, 2, 1]))
-# print(sort([7, 6, 4, 3, 5, 1, 2]))
