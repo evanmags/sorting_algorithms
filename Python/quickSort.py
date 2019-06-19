@@ -18,20 +18,8 @@ def quickSort(l):
       l.append(item)
       index -= 1
   
-  right = []
-  left = []
-
-  if index != len(l) - 1:
-    right = quickSort(l[index + 1:])
-  if index != 0:
-    left = quickSort(l[:index])
+  right = quickSort(l[index + 1:]) if index != len(l) - 1 else []
+  left = quickSort(l[:index]) if index != 0 else []
   
   return left + [ pivot ] + right
-
-
-l = []
-for i in range(10000):
-  l.append(random.randint(0, 10000))
-
-print(quickSort(l))
     

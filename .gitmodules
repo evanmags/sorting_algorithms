@@ -1,3 +1,3 @@
 [submodule "merge_sort"]
-	path = merge_sort
+	path = Python/merge_sort
 	url = https://github.com/evanmags/merge_sort.py.git

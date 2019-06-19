@@ -4,7 +4,7 @@ def selectionSort(l: list) -> list:
   returns the sorted list
   >>> selectionSort([7, 1, 3, 5, 4, 6, 2]) -> [1, 2, 3, 4, 5, 6, 7]
   """
-  newL = []
+  i = 0
 
   while len(l) > 0:
     smallest = l[0]
@@ -13,9 +13,8 @@ def selectionSort(l: list) -> list:
         smallest = item
       
     l.remove(smallest)
-    newL.append(smallest)
-  
-  l = newL
-
+    l.insert(i, smallest)
+    i += 1
+    
   return l
 
